@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1 id="albert">Document Object Model - DOM</h1>
+    <h1>Document Object Model - DOM</h1>
+    <p>The DOM is a browser tool/api/extension/software that converts a html document into a nested javascript object, allowing for manipulation. </p>
+    <button>Test</button>
+    <script>
+         const colors = ["pink","green","yellow","blue","orange","purple"]
+        document.body.append("Javascipt DOM in action - appending/adding text to the page")
+        document.querySelector("button").addEventListener("mouseover",changeBG)
+
+        function changeBG (){
+            const randomIndex = Math.floor(Math.random()*colors.length)
+            document.body.style.backgroundColor = colors[randomIndex]
+            document.getElementById("albert").textContent = "Dimo Humphrey"
+        }
+        document.querySelector("#albert").style.color = "yellowgreen"
+        // query selector --- identify and elment --- getElementbyid, getElementsByClassName, querySelectorAll, getElementsByTagName
+
+        // TASKS
+        // 1. implement a fully functional mobile menu button
+        // 2. implent a fully working dark mode light mode switching button
+        
+    </script>
+</body>
+</html>
